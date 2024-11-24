@@ -179,6 +179,22 @@ body {
     color: white;
 
     font-size: 18px;
+
+    transition-duration: 0.3s;
+}
+
+.btn-buy:hover {
+    cursor: pointer;
+    background-color: rgba(71, 122, 235, 0.5);
+    
+    border: solid 2px #477AEB;
+}
+
+.btn-buy:active {
+    background-color: transparent;
+    border: solid 2px #477AEB;
+
+    color: #020712;
 }
 
 .btn-favoris {
@@ -200,4 +216,40 @@ body {
 .heart-icone {
     width: 27px;
     height: 27px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 900px) {
+    .container-card {
+
+        width: 320px;
+        height: 700px;
+
+        margin-top: 10vh;
+
+        flex-direction: column;
+    }
+
+/* IMAGE */
+
+    .img-product {
+        width: 100%;
+        height: auto;
+
+        padding: 0 0 20px 0;
+    }
+
+/* CARD HEADER */
+
+    .card-head {
+        padding-bottom: 50px;
+    }
+
+/* PRICE */
+
+    .price {
+        padding-bottom: 50px;
+    }
+
 }
