@@ -216,6 +216,13 @@ body {
 .heart-icone {
     width: 27px;
     height: 27px;
+
+    transition-duration: 0.3s;
+}
+
+.heart-icone:active {
+    width: 35px;
+    height: 35px;
 }
 
 /* MEDIA QUERIES */

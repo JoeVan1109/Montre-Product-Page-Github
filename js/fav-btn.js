@@ -11,8 +11,6 @@ function addFav() {
         if (favButton && favIconeClicked === "../assets/icones/heart-regular.svg") {
             favIcone.setAttribute("src", "../assets/icones/heart-solid.svg");
 
-            console.log(favIconeClicked);
-
         // Si l'icône n'est pas cliquée, changer l'icône en coeur vide
         } else {
             favIcone.setAttribute("src", "../assets/icones/heart-regular.svg");
