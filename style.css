@@ -33,18 +33,23 @@ body {
 /* CONTAINER */
 
 .container-card {
-    width: 825px;
-    height: 372px;
+    width: 722px;
+    height: 340px;
+    
     margin-top: 25vh;
     padding: 45px;
+
     display: flex;
     align-items: stretch;
     justify-content: space-between;
+
     background-color: white;
+
     border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.card-body {
+.card-body-right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,18 +67,21 @@ body {
     flex: 6rem;
 }
 
-/* INFORMATIONS CARD */
+/* CARD HEADER */
 
 .card-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 12px;
 
 }
 
-/* INFOS THECH */
+/* INFOS TECH HEADER */
 
 .theme-product {
-    width: 80px;
+    width: 74px;
     height: 35px;
 
     display: flex;
@@ -82,9 +90,14 @@ body {
 
     background-color: #020712;
     opacity: 80%;
-    color: white;
 
     border-radius: 60px;
+}
+
+.text-theme-product {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
 }
 
 .title-product {
@@ -94,14 +107,19 @@ body {
 }
 
 .number-product {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
     color: #020712;
     opacity: 40%;
 }
 
+/* NOTE */
+
 .note-product {
     display: flex;
+    align-items: center;
+
+    padding-top: 12px;
 
 }
 
@@ -111,4 +129,43 @@ body {
 
 .note {
     margin-left: 20px;
+
+    font-size: 13px;
+
+    color: #020712;
+    opacity: 40%;
+}
+
+/* PRICE */
+
+.old-price-product {
+    text-decoration: line-through;
+
+    color: #020712;
+    opacity: 40%;
+}
+
+.new-price-product {
+    font-size: 57px;
+    font-weight: 700;
+
+    padding-top: 5px;
+}
+
+/* BUTTON */
+
+.btn-buy {
+
+    width: 252px;
+    height: 50px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #477AEB;
+
+    color: white;
+
+    font-size: 18px;
 }
