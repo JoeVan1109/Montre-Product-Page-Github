@@ -3,8 +3,20 @@ function addFav() {
     const favIcone = document.querySelector(".heart-icone");
 
     favButton.addEventListener("click", () => {
-        console.log("fav");
-        favIcone.setAttribute("src", "../assets/icones/heart-solid.svg");
+
+        // Stocker l'état actuel de l'icône
+        const favIconeClicked = favIcone.getAttribute("src");
+
+        // Si l'icône est cliquée, changer l'icône en coeur plein
+        if (favButton && favIconeClicked === "../assets/icones/heart-regular.svg") {
+            favIcone.setAttribute("src", "../assets/icones/heart-solid.svg");
+
+            console.log(favIconeClicked);
+
+        // Si l'icône n'est pas cliquée, changer l'icône en coeur vide
+        } else {
+            favIcone.setAttribute("src", "../assets/icones/heart-regular.svg");
+        }
     });
 }
 
