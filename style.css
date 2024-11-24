@@ -6,8 +6,10 @@ Button: #477AEB;
 Text: #020712;
 
 
-Price barré : opacity 60%
-Button fav : opacity 90%
+
+Grayed out text : opacity 40%
+Button fav : opacity 10%
+Theme : opacity 80%
 
 Font Inter :
 
@@ -53,7 +55,6 @@ body {
 /* IMAGE */
 
 .img-product {
-    
 
     box-sizing: border-box;
     padding-right: 40px;
@@ -69,10 +70,34 @@ body {
 
 }
 
+/* INFOS THECH */
+
+.theme-product {
+    width: 80px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #020712;
+    opacity: 80%;
+    color: white;
+
+    border-radius: 60px;
+}
+
 .title-product {
     font-size: 35px;
     font-weight: semibold;
 
+}
+
+.number-product {
+    font-size: 15px;
+    font-weight: 400;
+    color: #020712;
+    opacity: 40%;
 }
 
 .note-product {
